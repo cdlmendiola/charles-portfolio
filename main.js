@@ -152,10 +152,21 @@ document.documentElement.classList.add('js');
   });
   if (reduce || !('IntersectionObserver' in window)) items.forEach(function (el) { el.classList.add('in'); });
   else {
+    // clip-path hides an element from IntersectionObserver, so clipped items are watched through their parent
+    var watchers = new Map();
+    items.forEach(function (el) {
+      var t = el.classList.contains('rv-clip') ? el.parentElement : el;
+      if (!watchers.has(t)) watchers.set(t, []);
+      watchers.get(t).push(el);
+    });
     var io = new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: .15, rootMargin: '0px 0px -50px 0px' });
-    items.forEach(function (el) { io.observe(el); });
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        watchers.get(e.target).forEach(function (el) { el.classList.add('in'); });
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -12% 0px' });
+    watchers.forEach(function (_, t) { io.observe(t); });
   }
 
   /* ---------- Magnetic buttons ---------- */
