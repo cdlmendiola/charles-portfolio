@@ -303,3 +303,4 @@ form.panel h2 { color: var(--yellow); }
 .post-foot p { margin: 0; color: #666; font-size: .9rem; }
 .post .swipe-hint { animation: nudge 1.6s var(--ease) 1; }
 @keyframes nudge { 30% { transform: translateX(-38px); } 60% { transform: none; } }
+.dark .cf-stage > figure .card-img, .dark .cf-stage > figure img { background: #1c1c1c; border-color: #2a2a2a; }
