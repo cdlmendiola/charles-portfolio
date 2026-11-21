@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Charles Mendiola | Visual Designer & Social Media Manager</title>
   <meta name="description" content="Visual designer for brands and social media. Turn inconsistent content into visuals that grab attention and build trust.">
+  <meta name="theme-color" content="#FFD60A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="index">
+  <div class="curtain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">Charles <span>Mendiola</span></a>
+      <a class="brand" href="index.html">Charles <em>Mendiola</em></a>
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
       <ul class="nav">
         <li><a href="index.html" data-page="index">Home</a></li>
@@ -25,72 +28,102 @@
     </div>
   </header>
   <main>
-    <section class="hero center">
+    <section class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div>
       <div class="wrap">
-        <h1>Charles Mendiola</h1>
-        <p class="sub">Visual Designer for Brands &amp; Social Media</p>
-        <p class="lead"><strong>Turn inconsistent content into visuals that grab attention and build trust.</strong></p>
-        <div class="btn-row" style="margin-top:28px"><a class="btn gold" href="contact.html">Upgrade your visuals</a><a class="btn ghost" href="portfolio.html">See my work</a></div>
+        <div class="hero-grid">
+          <div>
+            <h1 class="split"><span class="line">Charles</span><span class="line">Mendiola</span></h1>
+            <p class="role rv">Visual Designer for Brands &amp; Social Media</p>
+            <p class="lead rv">Turn inconsistent content into visuals that <span class="hl">grab attention</span> and <span class="hl">build trust.</span></p>
+            <div class="btn-row rv" style="margin-top:30px"><a class="btn" href="contact.html">Upgrade your visuals</a><a class="btn alt" href="portfolio.html">See my work</a></div>
+          </div>
+          <div class="badge rv-pop" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#circ">Visual designer &bull; Brands &bull; Social media &bull;</textPath></text></svg>
+            <div class="core">&#10022;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="marquee " aria-hidden="true"><div class="track"><span>Social Media Design <i>&#10022;</i></span><span>Marketing Materials <i>&#10022;</i></span><span>Brand Logos <i>&#10022;</i></span><span>Carousels <i>&#10022;</i></span><span>Social Media Management <i>&#10022;</i></span><span>Promotional Ads <i>&#10022;</i></span><span>Social Media Design <i>&#10022;</i></span><span>Marketing Materials <i>&#10022;</i></span><span>Brand Logos <i>&#10022;</i></span><span>Carousels <i>&#10022;</i></span><span>Social Media Management <i>&#10022;</i></span><span>Promotional Ads <i>&#10022;</i></span></div></div>
+
+    <section class="cream rounded-top" style="margin-top:-30px;padding-top:150px">
+      <div class="wrap grid-2">
+        <div>
+          <span class="tag rv">The problem</span>
+          <h2 class="split">Struggling with <span class="it">inconsistent</span> visuals?</h2>
+          <p class="rv">Your content feels rushed, unpolished, or all over the place&mdash;and it&rsquo;s making your brand <strong>easy to ignore.</strong></p>
+          <p class="rv">When your visuals aren&rsquo;t clear and consistent, people don&rsquo;t pay attention&mdash;and they don&rsquo;t <strong>trust your brand.</strong></p>
+          <p class="rv">I design clean, professional visuals that turn inconsistent content into something <span class="hl">clear, engaging, and easy to trust.</span></p>
+        </div>
+        <div class="collage">
+          <div class="frame rv-clip" data-speed="0.06"><img src="img/photo-phone-feed.jpg" alt="Hand holding a phone showing an Instagram feed"></div>
+          <div class="frame rv-clip" data-speed="-0.05" style="--d:.2s"><img src="img/photo-black-friday.jpg" alt="Black Friday sale signs on a wooden table"></div>
+          <span class="sticker rv-pop" style="--d:.5s">clear &gt; cluttered</span>
+        </div>
       </div>
     </section>
 
-    <section class="band">
-      <div class="wrap grid-2">
-        <div>
-          <span class="eyebrow rv">The problem</span>
-          <h2 class="rv">Struggling with inconsistent visuals?</h2>
-          <p class="rv">Your content feels rushed, unpolished, or all over the place&mdash;and it&rsquo;s making your brand <mark>easy to ignore.</mark></p>
-          <p class="rv">When your visuals aren&rsquo;t clear and consistent, people don&rsquo;t pay attention&mdash;and they don&rsquo;t <mark>trust your brand.</mark></p>
-          <p class="rv">I design clean, professional visuals that turn inconsistent content into something <mark>clear, engaging, and easy to trust.</mark></p>
-        </div>
-        <div class="photo-stack">
-          <img class="photo rv left" src="img/photo-phone-feed.jpg" alt="Hand holding a phone showing an Instagram feed">
-          <img class="photo rv right" src="img/photo-black-friday.jpg" alt="Black Friday sale signs on a wooden table">
-        </div>
+    <section class="dark">
+      <div class="wrap center">
+        <span class="tag rv">Why it matters</span>
+        <h2 class="split">Why clear visuals <span class="it">matter</span></h2>
+        <p class="lead rv">Clear and consistent visuals make your brand easier to understand, easier to <span class="hl">trust</span>, and harder to ignore.</p>
+        <p class="lead rv">When your content is structured and well-designed, your message becomes <span class="hl">stronger</span>&mdash;and your brand feels more professional. Instead of blending in, your content stands out and connects with your audience.</p>
       </div>
     </section>
 
     <section>
-      <div class="wrap center">
-        <span class="eyebrow rv">Why it matters</span>
-        <h2 class="rv">Why clear visuals matter</h2>
-        <p class="lead rv">Clear and consistent visuals make your brand easier to understand, easier to <mark>trust</mark>, and harder to ignore.</p>
-        <p class="lead rv">When your content is structured and well-designed, your message becomes <mark>stronger</mark>&mdash;and your brand feels more professional. Instead of blending in, your content stands out and connects with your audience.</p>
-      </div>
-    </section>
-
-    <section class="band">
       <div class="wrap">
-        <h2 class="center rv">What you can get</h2>
-        <div class="grid-3" style="margin-top:36px">
-          <div class="card rv"><div class="num">01</div><h3>Social Media Design</h3><p>Scroll-stopping visuals that keep your content <strong>consistent, engaging, and professional.</strong> Designed to communicate clearly and help your brand stand out in a crowded feed.</p></div>
-          <div class="card rv"><div class="num">02</div><h3>Marketing Materials</h3><p>Clean, professional designs that help you promote your brand effectively. From menus to promotional materials, everything is <strong>clear, consistent, and visually impactful.</strong></p></div>
-          <div class="card rv"><div class="num">03</div><h3>Social Media Management</h3><p>I manage your page so your posts go out <strong>on time, every time.</strong> I schedule your Facebook videos and post your Spotify link in the comments so every view can turn into a stream.</p></div>
+        <div class="work-head">
+          <h2 class="split">What you <span class="it">can get</span></h2>
+          <p class="rv">Three ways I help brands look consistent, professional, and easy to trust.</p>
         </div>
-        <div class="btn-row center rv" style="justify-content:center;margin-top:40px"><a class="btn" href="services.html">View full services</a></div>
+        <div class="grid-3">
+          <div class="card rv"><span class="n">01</span><h3>Social Media Design</h3><p>Scroll-stopping visuals that keep your content <strong>consistent, engaging, and professional.</strong> Designed to communicate clearly and help your brand stand out in a crowded feed.</p><a class="more" href="services.html">Learn more</a></div>
+          <div class="card rv"><span class="n">02</span><h3>Marketing Materials</h3><p>Clean, professional designs that help you promote your brand effectively. From menus to promotional materials, everything is <strong>clear, consistent, and visually impactful.</strong></p><a class="more" href="services.html">Learn more</a></div>
+          <div class="card rv"><span class="n">03</span><h3>Social Media Management</h3><p>I manage your page so your posts go out <strong>on time, every time.</strong> I schedule your Facebook videos and post your Spotify link in the comments so every view can turn into a stream.</p><a class="more" href="services.html">Learn more</a></div>
+        </div>
       </div>
     </section>
 
-    <section class="band-navy">
-      <div class="wrap grid-2">
-        <div>
-          <h2 class="rv">See how your brand could look</h2>
-          <p class="lead rv">Explore clean, professional visuals designed to make brands more consistent, engaging, and easy to trust.</p>
-          <div class="btn-row rv"><a class="btn gold" href="portfolio.html">View portfolio</a></div>
+    <section class="dark">
+      <div class="wrap">
+        <div class="work-head">
+          <div><span class="tag rv">Portfolio</span><h2 class="split" style="margin:0">See how your brand <span class="it">could look</span></h2></div>
+          <a class="btn yellow rv" href="portfolio.html">View full portfolio</a>
         </div>
-        <img class="photo rv zoom" src="img/carousel-3-signs.jpg" alt="Carousel cover: 3 Signs You're Ready to Hire a Social Media Team">
+        <div class="slideshow" data-delay="4000" aria-label="Featured carousel designs">
+          <figure><img src="img/carousel-3-signs.jpg" alt="Carousel cover: 3 Signs You're Ready to Hire a Social Media Team"><figcaption>3 Signs You&rsquo;re Ready to Hire a Social Media Team</figcaption></figure>
+          <figure><img src="img/logo-willow-steam.jpg" alt="Willow &amp; Steam Cafe &amp; Restaurant logo"><figcaption>Willow &amp; Steam Cafe &amp; Restaurant</figcaption></figure>
+          <figure><img src="img/carousel-travel-reels.jpg" alt="Carousel cover: 3 Kinds of Travel Reels That Always Work"><figcaption>3 Kinds of Travel Reels</figcaption></figure>
+          <figure><img src="img/logo-gold-brew.jpg" alt="Gold Brew coffee logo"><figcaption>Gold Brew</figcaption></figure>
+          <figure><img src="img/carousel-content-pillars.jpg" alt="Carousel cover: Don't know what to post? Start with your content pillars"><figcaption>Start With Your Content Pillars</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="wrap">
+        <span class="tag rv">Let's talk</span>
+        <h2 class="split">Ready to improve your <span class="it">visuals?</span></h2>
+        <div class="btn-row rv" style="justify-content:center"><a class="btn" href="contact.html">Let's work together</a></div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
-      <nav>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <p class="big">Let's make it<br>look good.</p>
+      <div class="row">
+        <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
+        <nav>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>

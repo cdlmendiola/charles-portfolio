@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Charles Mendiola</title>
   <meta name="description" content="Get in touch with Charles Mendiola to upgrade your brand visuals.">
+  <meta name="theme-color" content="#FFD60A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="contact">
+  <div class="curtain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">Charles <span>Mendiola</span></a>
+      <a class="brand" href="index.html">Charles <em>Mendiola</em></a>
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
       <ul class="nav">
         <li><a href="index.html" data-page="index">Home</a></li>
@@ -25,44 +28,55 @@
     </div>
   </header>
   <main>
-    <section class="page-hero center band">
-      <div class="wrap">
-        <span class="eyebrow">Contact</span>
-        <h1>Want to upgrade your visuals?</h1>
-        <p class="lead">Tell me about your brand and what you need. I&rsquo;ll get back to you with ideas and next steps.</p>
-      </div>
-    </section>
-
-    <section>
+    <section class="page-hero">
       <div class="wrap grid-2" style="align-items:start">
-        <div class="contact-card rv left">
-          <h2>Reach me directly</h2>
-          <div class="contact-line"><div class="ico">IG</div><a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">@cm.creativelab</a></div>
-          <div class="contact-line"><div class="ico">@</div><a href="mailto:charlesmendiola.va@gmail.com">charlesmendiola.va@gmail.com</a><button class="btn gold" type="button" data-copy="charlesmendiola.va@gmail.com">Copy</button></div>
+        <div>
+          <span class="tag rv">Contact</span>
+          <h1 class="split">Want to <span class="it">upgrade</span> your visuals?</h1>
+          <p class="lead rv">Tell me about your brand and what you need. I&rsquo;ll get back to you with ideas and next steps.</p>
+          <div class="contact-list">
+            <div class="contact-row rv">
+              <div><small>Email</small><a class="contact-big" href="mailto:charlesmendiola.va@gmail.com">charlesmendiola.va@gmail.com</a></div>
+              <button class="btn copy" type="button" data-copy="charlesmendiola.va@gmail.com">Copy email</button>
+            </div>
+            <div class="contact-row rv">
+              <div><small>Instagram</small><a class="contact-big" href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">@cm.creativelab</a></div>
+            </div>
+          </div>
         </div>
-        <form class="contact-card rv right" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form class="panel rv" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact">
           <p hidden><label>Leave this empty <input name="bot-field"></label></p>
           <h2>Send a message</h2>
-          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required></div>
-          <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="email" required></div>
-          <div class="field"><label for="f-need">What do you need?</label>
-            <select id="f-need" name="service"><option>Social Media Content Design</option><option>Brand Marketing Materials</option><option>Social Media Management</option><option>Not sure yet</option></select></div>
-          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
-          <button class="btn" type="submit">Send message</button>
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="email" autocomplete="email" required></div>
+          <div class="field"><label>What do you need?</label>
+            <div class="chips">
+              <label><input type="checkbox" name="service" value="Social Media Content Design"><span>Social media design</span></label>
+              <label><input type="checkbox" name="service" value="Brand Marketing Materials"><span>Marketing materials</span></label>
+              <label><input type="checkbox" name="service" value="Social Media Management"><span>Page management</span></label>
+              <label><input type="checkbox" name="service" value="Logo"><span>Logo</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" required></textarea></div>
+          <button class="btn yellow" type="submit">Send message</button>
         </form>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
-      <nav>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <p class="big">Let's make it<br>look good.</p>
+      <div class="row">
+        <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
+        <nav>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>

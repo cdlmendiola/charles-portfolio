@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Services | Charles Mendiola</title>
   <meta name="description" content="Social media content design, brand marketing materials and social media management.">
+  <meta name="theme-color" content="#FFD60A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="services">
+  <div class="curtain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">Charles <span>Mendiola</span></a>
+      <a class="brand" href="index.html">Charles <em>Mendiola</em></a>
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
       <ul class="nav">
         <li><a href="index.html" data-page="index">Home</a></li>
@@ -25,26 +28,23 @@
     </div>
   </header>
   <main>
-    <section class="page-hero center band">
+    <section class="page-hero">
       <div class="wrap">
-        <span class="eyebrow">Services</span>
-        <h1>Design services that make your brand clear, consistent, and professional</h1>
-        <p class="lead">Clean, structured visuals designed to help your brand communicate better, attract attention, and build trust.</p>
+        <span class="tag rv">Services</span>
+        <h1 class="split">Design that makes your brand <span class="it">clear, consistent</span> &amp; professional</h1>
+        <p class="lead rv">Clean, structured visuals designed to help your brand communicate better, attract attention, and build trust.</p>
       </div>
     </section>
+    <div class="marquee flat" aria-hidden="true"><div class="track"><span>What you get <i>&#10022;</i></span><span>How it improves your brand <i>&#10022;</i></span><span>What you get <i>&#10022;</i></span><span>How it improves your brand <i>&#10022;</i></span><span>What you get <i>&#10022;</i></span><span>How it improves your brand <i>&#10022;</i></span><span>What you get <i>&#10022;</i></span><span>How it improves your brand <i>&#10022;</i></span></div></div>
 
-    <div class="wrap">
-      <div class="service">
-        <div class="grid-2">
-          <div class="photo-stack">
-            <img class="photo rv left" src="img/photo-phone-app.jpg" alt="Phone showing a social media app next to design sketches">
-            <img class="photo rv right" src="img/photo-phone-grid.jpg" alt="Finger scrolling a photo grid on a phone">
-          </div>
+    <section>
+      <div class="wrap stack">
+        <article class="svc" style="--i:0">
           <div>
-            <span class="eyebrow rv">01</span>
-            <h2 class="rv">Social Media Content Design</h2>
-            <p class="rv">Designed to make your content look more <strong>structured, engaging, and easy to recognize.</strong> Helps your brand stay visually consistent while making your content easier to understand and interact with.</p>
-            <ul class="ticks rv">
+            <div class="big-n">01</div>
+            <h2>Social Media Content Design</h2>
+            <p>Designed to make your content look more <strong>structured, engaging, and easy to recognize.</strong> Helps your brand stay visually consistent while making your content easier to understand and interact with.</p>
+            <ul class="ticks">
               <li>Social Media Posts (single posts)</li>
               <li>Carousel Designs (multi-slide content)</li>
               <li>Promotional Graphics (sales, promos, ads)</li>
@@ -52,20 +52,18 @@
               <li>Highlight Covers / Story Graphics</li>
             </ul>
           </div>
-        </div>
-      </div>
-
-      <div class="service">
-        <div class="grid-2">
-          <div class="photo-stack">
-            <img class="photo rv left" src="img/photo-posters.jpg" alt="Colorful posters on a street wall">
-            <img class="photo rv right" src="img/photo-cinema.jpg" alt="Framed movie posters on a dark wall">
+          <div class="pair">
+            <div class="frame"><img src="img/photo-phone-app.jpg" alt="Phone showing a social media app next to design sketches"></div>
+            <div class="frame"><img src="img/photo-phone-grid.jpg" alt="Finger scrolling a photo grid on a phone"></div>
           </div>
+        </article>
+
+        <article class="svc" style="--i:1">
           <div>
-            <span class="eyebrow rv">02</span>
-            <h2 class="rv">Brand Marketing Materials</h2>
-            <p class="rv">Designed to present your message in a clear and professional way&mdash;so your audience understands and trusts your brand faster. Built to be <strong>clear, consistent, and visually impactful</strong> across all your materials.</p>
-            <ul class="ticks rv">
+            <div class="big-n">02</div>
+            <h2>Brand Marketing Materials</h2>
+            <p>Designed to present your message in a clear and professional way&mdash;so your audience understands and trusts your brand faster. Built to be <strong>clear, consistent, and visually impactful</strong> across all your materials.</p>
+            <ul class="ticks">
               <li>Service Menu / Price List Design</li>
               <li>Posters &amp; Flyers</li>
               <li>Promotional Print Designs</li>
@@ -73,24 +71,18 @@
               <li>Brochures / Layout Designs</li>
             </ul>
           </div>
-        </div>
-      </div>
+          <div class="pair">
+            <div class="frame"><img src="img/photo-posters.jpg" alt="Colorful posters on a street wall"></div>
+            <div class="frame"><img src="img/photo-cinema.jpg" alt="Framed movie posters on a dark wall"></div>
+          </div>
+        </article>
 
-      <div class="service" style="border:0">
-        <div class="grid-2">
-          <div class="rv zoom">
-          <div class="fb-mock" role="img" aria-label="Example of a scheduled Facebook video with the Spotify link pinned in the comments">
-            <div class="fb-row"><div class="fb-av">C</div><div><b>Client Music Page</b><small>Facebook video</small></div><span class="fb-tag">SCHEDULED &middot; FRI 7:00 PM</span></div>
-            <div>New single out now. Full song in the comments.</div>
-            <div class="fb-video"><span>0:58</span></div>
-            <div class="fb-row" style="margin:0"><div class="fb-av">C</div><div class="fb-comment"><b>Listen on Spotify &rarr;</b> open.spotify.com/track/&hellip;<small>Pinned comment &middot; posted on schedule</small></div></div>
-          </div>
-          </div>
+        <article class="svc" style="--i:2">
           <div>
-            <span class="eyebrow rv">03</span>
-            <h2 class="rv">Social Media Management</h2>
-            <p class="rv">I take care of your page so your content goes out <strong>on schedule</strong> and your audience knows where to find your music.</p>
-            <ul class="ticks rv">
+            <div class="big-n">03</div>
+            <h2>Social Media Management</h2>
+            <p>I take care of your page so your content goes out <strong>on schedule</strong> and your audience knows where to find your music.</p>
+            <ul class="ticks">
               <li>Content calendar planning</li>
               <li>Uploading and scheduling Facebook videos</li>
               <li>Posting the Spotify link in the comments and pinning it</li>
@@ -98,25 +90,38 @@
               <li>Replying to comments and messages</li>
             </ul>
           </div>
-        </div>
+          <div>
+            <div class="fb-mock" role="img" aria-label="Example of a scheduled Facebook video with the Spotify link pinned in the comments">
+              <div class="fb-row"><div class="fb-av">C</div><div><b>Client Music Page</b><small>Facebook video</small></div><span class="fb-tag">SCHEDULED &middot; FRI 7:00 PM</span></div>
+              <div>New single out now. Full song in the comments.</div>
+              <div class="fb-video"><span>0:58</span></div>
+              <div class="fb-row" style="margin:0"><div class="fb-av">C</div><div class="fb-comment"><b>Listen on Spotify &rarr;</b> open.spotify.com/track/&hellip;<small>Pinned comment &middot; posted on schedule</small></div></div>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-    <section class="band-gold cta-strip">
+    </section>
+    <section class="cta">
       <div class="wrap">
-        <h2 class="rv">Ready to improve your visuals?</h2>
+        <span class="tag rv">Let's talk</span>
+        <h2 class="split">Ready to improve your <span class="it">visuals?</span></h2>
         <div class="btn-row rv" style="justify-content:center"><a class="btn" href="contact.html">Let's work together</a></div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
-      <nav>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <p class="big">Let's make it<br>look good.</p>
+      <div class="row">
+        <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
+        <nav>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>

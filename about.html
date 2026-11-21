@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Charles Mendiola</title>
   <meta name="description" content="The thinking behind Charles Mendiola's design work.">
+  <meta name="theme-color" content="#FFD60A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="about">
+  <div class="curtain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html">Charles <span>Mendiola</span></a>
+      <a class="brand" href="index.html">Charles <em>Mendiola</em></a>
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
       <ul class="nav">
         <li><a href="index.html" data-page="index">Home</a></li>
@@ -25,58 +28,67 @@
     </div>
   </header>
   <main>
-    <section class="page-hero center band">
-      <div class="wrap">
-        <span class="eyebrow">About</span>
-        <h1>The thinking behind the work</h1>
-        <p class="lead">I&rsquo;m Charles Mendiola, a graphic designer focused on creating clean, structured visuals that help brands communicate more clearly.</p>
-      </div>
-    </section>
-
-    <section>
+    <section class="page-hero">
       <div class="wrap grid-2">
         <div>
-          <p class="lead rv"><strong>Good design isn&rsquo;t just about how things look&mdash;it&rsquo;s about how your brand is understood.</strong></p>
-          <p class="rv">Every visual should have purpose, direction, and consistency. Without that, even good-looking designs can feel disconnected and easy to ignore.</p>
-          <h2 class="rv" style="margin-top:36px">What I focus on</h2>
-          <p class="rv">I design visuals that help brands present themselves more clearly, more consistently, and more professionally.</p>
-          <p class="rv">From social media content to marketing materials, each design is created with intention&mdash;so your brand doesn&rsquo;t just look good, but <mark>communicates effectively and stands out.</mark></p>
+          <span class="tag rv">About</span>
+          <h1 class="split">The thinking <span class="it">behind</span> the work</h1>
         </div>
-        <img class="photo rv right" src="img/carousel-coaches.jpg" alt="Coaches carousel design sample">
+        <p class="lead rv">I&rsquo;m Charles Mendiola, a graphic designer focused on creating clean, structured visuals that help brands communicate more clearly.</p>
+      </div>
+    </section>
+    <div class="marquee flat" aria-hidden="true"><div class="track"><span>Purpose <i>&#10022;</i></span><span>Direction <i>&#10022;</i></span><span>Consistency <i>&#10022;</i></span><span>Clarity <i>&#10022;</i></span><span>Trust <i>&#10022;</i></span><span>Purpose <i>&#10022;</i></span><span>Direction <i>&#10022;</i></span><span>Consistency <i>&#10022;</i></span><span>Clarity <i>&#10022;</i></span><span>Trust <i>&#10022;</i></span></div></div>
+
+    <section class="cream">
+      <div class="wrap grid-2">
+        <div class="frame rv-clip" style="box-shadow:14px 14px 0 var(--ink);rotate:-2deg"><img src="img/carousel-coaches.jpg" alt="Coaches carousel design sample"></div>
+        <div>
+          <h2 class="split">Good design is about how your brand is <span class="it">understood.</span></h2>
+          <p class="rv">Good design isn&rsquo;t just about how things look. Every visual should have purpose, direction, and consistency. Without that, even good-looking designs can feel disconnected and easy to ignore.</p>
+          <h3 class="rv" style="margin-top:34px">What I focus on</h3>
+          <p class="rv">I design visuals that help brands present themselves more clearly, more consistently, and more professionally.</p>
+          <p class="rv">From social media content to marketing materials, each design is created with intention&mdash;so your brand doesn&rsquo;t just look good, but <span class="hl">communicates effectively and stands out.</span></p>
+        </div>
       </div>
     </section>
 
-    <section class="band">
+    <section class="dark">
       <div class="wrap grid-2">
-        <img class="photo rv left" src="img/why-it-matters.jpg" alt="Why it matters design layout with a phone photo of coffee">
         <div>
-          <h2 class="rv">Why it matters</h2>
+          <span class="tag rv">Why it matters</span>
+          <h2 class="split">Strong design is a <span class="it">tool</span>, not decoration</h2>
           <p class="rv">When your visuals are clear and consistent, your audience understands your brand faster, trusts it more, and is more likely to engage.</p>
           <p class="rv">Because strong design isn&rsquo;t just decoration&mdash;it&rsquo;s a tool that helps your brand connect, communicate, and grow.</p>
         </div>
+        <div class="frame rv-clip" style="box-shadow:14px 14px 0 var(--yellow);border-color:var(--yellow);rotate:2deg"><img src="img/why-it-matters.jpg" alt="Why it matters design layout with a phone photo of coffee"></div>
       </div>
-      <div class="wrap grid-3" style="margin-top:48px">
-        <div class="card rv"><div class="num">01</div><h3>Improves Communication</h3><p>Clear design helps your message land and your brand be remembered.</p></div>
-        <div class="card rv"><div class="num">02</div><h3>Builds Trust</h3><p>Consistent visuals create credibility and show professionalism.</p></div>
-        <div class="card rv"><div class="num">03</div><h3>Drives Growth</h3><p>Strong visual identity attracts the right audience and builds loyalty.</p></div>
+      <div class="wrap grid-3" style="margin-top:70px">
+        <div class="card rv"><span class="n">01</span><h3>Improves Communication</h3><p>Clear design helps your message land and your brand be remembered.</p></div>
+        <div class="card rv"><span class="n">02</span><h3>Builds Trust</h3><p>Consistent visuals create credibility and show professionalism.</p></div>
+        <div class="card rv"><span class="n">03</span><h3>Drives Growth</h3><p>Strong visual identity attracts the right audience and builds loyalty.</p></div>
       </div>
     </section>
-    <section class="band-gold cta-strip">
+    <section class="cta">
       <div class="wrap">
-        <h2 class="rv">Ready to improve your visuals?</h2>
+        <span class="tag rv">Let's talk</span>
+        <h2 class="split">Ready to improve your <span class="it">visuals?</span></h2>
         <div class="btn-row rv" style="justify-content:center"><a class="btn" href="contact.html">Let's work together</a></div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
-      <nav>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <p class="big">Let's make it<br>look good.</p>
+      <div class="row">
+        <span>&copy; 2026 Charles Mendiola &middot; Visual Designer &amp; Social Media Manager</span>
+        <nav>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="https://www.instagram.com/cm.creativelab/" target="_blank" rel="noopener">Instagram</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>
