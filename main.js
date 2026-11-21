@@ -144,6 +144,49 @@ document.documentElement.classList.add('js');
     go(0);
   });
 
+
+  /* ---------- Instagram-style carousel posts ---------- */
+  document.querySelectorAll('.post').forEach(function (post) {
+    var track = post.querySelector('.post-track'), imgs = track.querySelectorAll('img'), n = imgs.length;
+    var count = post.querySelector('.post-count'), dotsBox = post.querySelector('.post-dots');
+    var prev = post.querySelector('.prev'), next = post.querySelector('.next');
+    for (var k = 0; k < n; k++) dotsBox.appendChild(document.createElement('i'));
+    var dots = dotsBox.children, cur = -1;
+    function idx() { return Math.round(track.scrollLeft / track.clientWidth); }
+    function update() {
+      var i = Math.max(0, Math.min(n - 1, idx())); if (i === cur) return; cur = i;
+      count.textContent = (i + 1) + '/' + n;
+      Array.prototype.forEach.call(dots, function (d, j) { d.classList.toggle('on', j === i); });
+      prev.disabled = i === 0; next.disabled = i === n - 1;
+    }
+    function goTo(i) { track.scrollTo({ left: i * track.clientWidth, behavior: reduce ? 'auto' : 'smooth' }); }
+    prev.addEventListener('click', function () { goTo(idx() - 1); });
+    next.addEventListener('click', function () { goTo(idx() + 1); });
+    track.addEventListener('scroll', update, { passive: true });
+    track.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); goTo(idx() + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(idx() - 1); }
+    });
+    // mouse drag to swipe on desktop
+    var dragX = null, startLeft = 0;
+    track.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'mouse') return; dragX = e.clientX; startLeft = track.scrollLeft; track.style.scrollSnapType = 'none'; track.style.scrollBehavior = 'auto'; });
+    addEventListener('pointermove', function (e) { if (dragX !== null) track.scrollLeft = startLeft - (e.clientX - dragX); });
+    addEventListener('pointerup', function (e) {
+      if (dragX === null) return; var dx = e.clientX - dragX; dragX = null;
+      track.style.scrollSnapType = ''; track.style.scrollBehavior = '';
+      var base = Math.round(startLeft / track.clientWidth);
+      goTo(Math.abs(dx) > 50 ? base + (dx < 0 ? 1 : -1) : base);
+    });
+    update();
+    // one-time "swipe me" nudge when the post scrolls into view
+    if (!reduce && 'IntersectionObserver' in window) {
+      var seen = new IntersectionObserver(function (es) {
+        if (es[0].isIntersecting) { imgs[0].classList.add('swipe-hint'); seen.disconnect(); }
+      }, { threshold: .6 });
+      seen.observe(track);
+    }
+  });
+
   /* ---------- Reveal on scroll ---------- */
   var items = document.querySelectorAll('.rv, .rv-clip, .rv-pop, .split');
   items.forEach(function (el) {
